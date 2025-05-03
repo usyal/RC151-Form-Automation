@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+}
+
+.bounce {
+  width: 100vw;
+  font-size: clamp(1rem, 5vw, 5rem); /* Adjusts font size based on viewport width */
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: absolute;
+  animation: bounce 2s ease-in-out;
+}
+
+h1:hover{
+  cursor: pointer;
+}
+
+.form-container{
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    top: calc((100vh - 30rem) / 2);
+    left: calc((100vw - 50rem) / 2);
+    border: 10px solid white;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 5rem aliceblue;    
+}
+
+.export {
+    width: 5.5rem;
+    height: 3rem;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    top: calc((100vh + 15rem) / 2);
+    left: calc((100vw - 5rem) / 2);
+    background-color: lightgreen;
+    border: 2px double aliceblue;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: box-shadow 1s ease-in-out;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    box-shadow: 0 0 5rem aliceblue;
+}
+
+.export:hover{
+  transition: box-shadow 1s ease-in-out;
+  box-shadow: 0 0 5rem green;
+}
+
+.button-press {
+  transition: transform 0.2s ease-in-out;
+}
+
+.button-press:active {
+  transform: scale(0.9);
+}
+
+@keyframes bounce {
+  0%{
+    transform: translateY(-3rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.form-container>*{
+  font-size: 1.5rem;
+  position: absolute;
+  font-style: italic;
+  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.initial-file{
+  bottom: 80%;
+}

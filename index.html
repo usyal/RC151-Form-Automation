@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://unpkg.com/pdf-lib"></script>
+    
+    <title>RC151 Form Automation</title>
+  </head>
+  <body>
+    <h1 class="bounce">RC151 Form Automation</h1>
+    <div class="form-container">
+      <div class="initial-file">
+        <label for="excelInput">Select Excel with info:</label>
+        <input type="file" id="excelInput" accept=".xlsx, .xls">
+      </div>
+
+      <div class="output-file">
+        <label for="pdfInput">Select PDF to fill:</label>
+        <input type="file" id="pdfOutput" accept="application/pdf">
+      </div>
+    </div>
+    <button class="export button-press">Process</button>
+    <script src="script.js"></script>
+  </body>
+</html>
