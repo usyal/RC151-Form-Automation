@@ -1,0 +1,1 @@
+Automatically fill out the RC151 form with client information extracted from an Excel file. This service reads key client details—such as name, SIN, and other relevant data—from the spreadsheet and seamlessly fills out the official RC151 form with accuracy and efficiency.
